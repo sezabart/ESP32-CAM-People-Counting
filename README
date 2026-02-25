@@ -1,1 +1,11 @@
-idf.py add-dependency "espressif/esp32-camera"
+# This is a ESP-IDF based faulty people-passing-by counter using temporal shift for the AI Thinker ESP32-CAM board.
+
+The device will broadcast a ESP32-CAM-Counter SSID with captive portal functionality. It has an interface showing what it thinks are people passing left or right and the average of those (if there is one entrance should be more accurate) and a reset button.
+
+In testing has not proven to be reliable at all, and hope by yours truly has been lost.
+
+## Setup
+- Set up ESP-IDF
+- In an `idf.py` enabled environment, add the dependency:
+`idf.py add-dependency "espressif/esp32-camera"`
+- Build and flash it
